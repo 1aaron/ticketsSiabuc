@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Inicio" />
+        <item
+            android:id="@+id/nav_misTickets"
+            android:icon="@drawable/ic_ticket"
+            android:title="Mis tickets" />
+        <item
+            android:id="@+id/nav_Libres"
+            android:icon="@drawable/ic_ticket_libre"
+            android:title="Tickets libres" />
+        <item
+            android:id="@+id/nav_statics"
+            android:icon="@drawable/ic_stats"
+            android:title="estadísticas" />
+        <item
+            android:id="@+id/nav_usuarios"
+            android:icon="@drawable/ic_users"
+            android:title="Roles usuarios"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Cerrar sesión" />
+    </group>
+
+</menu>

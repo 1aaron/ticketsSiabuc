@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.aaron.integradorsiabuc.TicketsLibres">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lstTicketsLibres"
+        android:divider="@color/background"
+        tools:listitem="@layout/mi_ticket_item"/>
+
+</FrameLayout>

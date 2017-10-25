@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.aaron.integradorsiabuc.HistorialFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+        <android.support.v7.widget.AppCompatRatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stepSize="0.5"
+            android:layout_centerHorizontal="true"
+            android:progressTint="@color/colorAccent"
+            android:numStars="5"
+            android:rating="1"
+            android:id="@+id/h_rating"/>
+        <!--TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/h_txtFolioTitulo"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Folio ticket: 4 En proceso" /-->
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/h_txtAsignadoMuestra"
+            android:layout_below="@id/h_rating"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Asignado: " />
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:id="@+id/h_txtAsignacion"
+            android:visibility="gone"
+            android:layout_below="@id/h_txtAsignadoMuestra"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Asignado: " />
+        <TextView
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:id="@+id/h_peticionMuestra"
+            android:layout_below="@id/h_txtAsignacion"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textStyle="italic"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="la petición será un texto muy largo así que hay que tener en cuenta el espacio que pueda ocupar "
+            />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/h_peticionMuestra"
+            tools:listitem="@layout/historial_list_item"
+            android:divider="@color/background"
+            android:id="@+id/h_lstHistoriales"/>
+    </RelativeLayout>
+</FrameLayout>

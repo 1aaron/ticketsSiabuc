@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.aaron.integradorsiabuc.RolesFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/cardview_light_background"
+            android:elevation="10dp"
+            android:id="@+id/r_txtInstruccion"
+            android:gravity="center_horizontal"
+            android:text="selecciona un usuario para asignarle un rol"
+            style="@style/TextAppearance.AppCompat.Title"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/r_lstUsuarios"
+            android:layout_below="@id/r_txtInstruccion"
+            android:divider="@color/background"
+            tools:listitem="@layout/roles_item"/>
+    </RelativeLayout>
+
+</FrameLayout>
