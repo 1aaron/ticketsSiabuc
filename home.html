@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Api DOC</title>
+</head>
+<body>
+    <h2>/user/login</h2>
+    <p>Se usa para hacer el login en la página, todos los  parámetros van en formato json dentro de info</p>
+    <p>Parámetros:</p>
+    <ul>
+        <li>email</li>
+        <li>password</li>
+    </ul>
+    <p>Respuesta:</p>
+    <p>login correcto:{
+        "status": 1,
+        "idUsuario": "7",
+        "dependencia": "0"
+    }</p>
+    <p>login incorrecto: { "status": 2 }</p>
+    <p>error desconocido: { "status": 3 }</p>
+    
+    <hr>
+    
+    <h2>/user/register</h2>
+    <p>Se usa para registrar un nuevo usuario</p>
+    <p>Parámetros:</p>
+    <ul>
+        <li>email</li>
+        <li>password</li>
+        <li>nombre</li>
+        <li>dependencia</li>
+        <li>tipoUsuario</li>
+    </ul>
+    <p>Respuesta:</p>
+    <p>registro correcto: { "status": 1 }</p>
+    <p>registro incorrecto: { "status": 2 }</p>
+    <p>registro desconocido: { "status": 3 }</p>
+    <hr>
+
+    <h2>/ticket/insert</h2>
+    <p>Se usa para registrar un nuevo usuario</p>
+    <p>Parámetros:</p>
+    <ul>
+        <li>usuario</li>
+        <li>peticion</li>
+        <li>fecha</li>
+    </ul>
+    <p>Respuesta:</p>
+    <p>registro correcto: { "status": 1 }</p>
+    <p>registro incorrecto: { "status": 2 }</p>
+    <p>registro desconocido: { "status": 3 }</p>
+    <hr>
+
+    <h2>/ticket/misTickets</h2>
+    <p>Se usa para obtener los tickets de un respectivo usuario</p>
+    <p>Parámetros:</p>
+    <ul>
+        <li>idUsuario</li>
+        <li>tipoUsuario</li>
+    </ul>
+    <p>Respuesta:</p>
+    <p>
+        obtención correcta: {
+            "status": 1,
+            "datos": [
+                {
+                    "folio": "5",
+                    "estado": "1",
+                    "estadioAlias": "Nuevo",
+                    "usuario": "8",
+                    "usuarioAlias": "Jose Perez Martinez",
+                    "asignadoA": null,
+                    "asignadoAlias": null,
+                    "fechaInicio": "2017-10-17 00:00:00",
+                    "peticion": "buscar un ibro",
+                    "fechaCierre": null,
+                    "calificacion": null
+                },
+                {
+                    "folio": "6",
+                    "estado": "1",
+                    "estadioAlias": "Nuevo",
+                    "usuario": "8",
+                    "usuarioAlias": "Jose Perez Martinez",
+                    "asignadoA": null,
+                    "asignadoAlias": null,
+                    "fechaInicio": "2017-10-17 00:00:00",
+                    "peticion": "buscar un ibro",
+                    "fechaCierre": null,
+                    "calificacion": null
+                }
+            ]
+        }
+    </p>
+    <p>registro desconocido: { "status": 3 }</p>
+    <hr>
+
+    <h2>/user/planteles</h2>
+    <p>Se usa para obtener los planteles en el registro</p>
+    <p>MÉTODO GET!</p>
+    <p>Respuesta:</p>
+    <p>obtención correcta: {
+        "status": 1,
+        "datos": [
+            {
+                "id": "0",
+                "etiqueta": "Facultad de telemática"
+            }
+        ]
+    }
+        </p>
+    <p>ERROR: { "status": 3 }</p>
+    <hr>
+
+
+</body>
+</html
