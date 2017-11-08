@@ -4,7 +4,7 @@
     require_once("controllers/Historial.php");
     require_once("controllers/Usuario.php");
 
-    const UNKNOWN_URL = "url desconocida";
+    const UNKNOWN_URL = "URL no conocida";
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
     if(isset($_GET['PATH_INFO'])){
