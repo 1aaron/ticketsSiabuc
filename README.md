@@ -10,9 +10,10 @@ proyecto integrador 7° semestre
 
 ##Ultimo corregido
 
+
 ## Equipo de trabajo
-* Aarón Negrete Caudillo
-* Alfa Jazmín Moreno Hernández
-* Jesús Chavarría
+* Aarón Negrete Caudillo.
+* Alfa Jazmín Moreno Hernández.
+* Jesús Chavarría.
 
 
