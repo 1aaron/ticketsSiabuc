@@ -7,4 +7,12 @@ proyecto integrador 7° semestre
 * mysql :+1:
 * emulador o dispositivo android 5.0 o superior :+1:
 
+
 ##Ultimo corregido
+
+## Equipo de trabajo
+* Aarón Negrete Caudillo
+* Alfa Jazmín Moreno Hernández
+* Jesús Chavarría
+
+
