@@ -10,10 +10,10 @@
         }
         public static function conect(){
 			$host = "127.0.0.1";
-			$usr = "miusuariodb";
+			$user = "miusuariodb";
 			$pwd = "*****";
 			$bdd = "test";
-            self::$dbcon = new mysqli($host, $usr , $pwd, $bdd);
+            self::$dbcon = new mysqli($host, $user , $pwd, $bdd);
             mysqli_set_charset(self::$dbcon,"utf8");
             if(self::$dbcon->connect_error)
                 die("Error de conexión (". self::$dbcon->connect_error.")");
