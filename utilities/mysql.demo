@@ -9,7 +9,11 @@
             self::conect();
         }
         public static function conect(){
-            self::$dbcon = new mysqli(NOMBRE_HOST, USUARIO, CONTRASENA, BASE_DE_DATOS);
+			$host = "127.0.0.1";
+			$usr = "miusuariodb";
+			$pwd = "*****";
+			$bdd = "test";
+            self::$dbcon = new mysqli($host, $usr , $pwd, $bdd);
             mysqli_set_charset(self::$dbcon,"utf8");
             if(self::$dbcon->connect_error)
                 die("Error de conexión (". self::$dbcon->connect_error.")");
