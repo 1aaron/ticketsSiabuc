@@ -3,7 +3,8 @@
     require_once("controllers/Ticket.php");
     require_once("controllers/Historial.php");
     require_once("controllers/Usuario.php");
-
+    require_once("controllers/Estadistica.php");    
+    
     const UNKNOWN_URL = "url desconocida";
     error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
@@ -14,7 +15,7 @@
     }
 
     $recurso = $parametros[0];
-    $recursos_existentes = array('user','ticket','historial','usuario');
+    $recursos_existentes = array('user','ticket','historial','usuario','estadistica');
 
     if(!in_array($recurso,$recursos_existentes)){
         return array('status' => UNKNOWN_URL );
